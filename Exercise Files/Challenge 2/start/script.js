@@ -9,7 +9,7 @@ Don't change lines 14, 19.
 
 "use strict";
 
-const arr = [1, 2];
+let arr = [1, 2];
 
 arr.push(3);
 
