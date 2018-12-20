@@ -8,7 +8,9 @@ Use ES6 whenever possible.
 
 "use strict";
 
-// Write code here
+function sum(...args) {
+  console.log(args.reduce((acc, element) => acc + element));
+}
 
 sum(1, 3);
 //4
