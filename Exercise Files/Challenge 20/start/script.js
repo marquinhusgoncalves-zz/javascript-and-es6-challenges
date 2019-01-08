@@ -14,7 +14,15 @@ It should return an object like this:
 
 var nums = [10, -12, 30, -1, -8, 0, 14, -33, 20];
 
-// Write sumPlusMinus() function here
+const sumPlusMinus = arr => {
+  return arr.reduce(
+    (acc, elem) => ({
+      plus: elem > 0 ? acc.plus + elem : acc.plus,
+      minus: elem < 0 ? acc.minus + elem : acc.minus
+    }),
+    { plus: 0, minus: 0 }
+  );
+}
 
 console.log(sumPlusMinus(nums));
 // {plus: 74, minus: -54}
